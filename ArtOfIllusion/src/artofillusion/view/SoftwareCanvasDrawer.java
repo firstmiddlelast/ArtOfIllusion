@@ -495,8 +495,8 @@ public class SoftwareCanvasDrawer implements CanvasDrawer
             y += dy;
             z += dz;
           }
-      }
-    else
+      
+}    else
       {
         // y is the major axis.
 

@@ -150,7 +150,8 @@ public abstract class ViewerCanvas extends CustomWidget
       }
     }
     if (drawer == null)
-      drawer = new SoftwareCanvasDrawer(this);
+      drawer = new AntialiasedSoftwareCanvasDrawer(this);
+      //drawer = new SoftwareCanvasDrawer(this);
     setFocusable(true);
     prefSize = new Dimension(0, 0);
     addEventLink(MousePressedEvent.class, this, "processMousePressed");
